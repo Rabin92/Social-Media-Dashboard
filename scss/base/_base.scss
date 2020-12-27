@@ -1,0 +1,55 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family--primary;
+  font-weight: $font-weight--medium;
+  font-size: $base__font-size;
+  line-height: ($base__line/$base__font-size);
+}
+
+header {
+  background: $bckTop;
+  height: 190px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  @media #{$break--m} {
+    height: 230px;
+  }
+}
+
+// Text
+
+h1 {
+  color: $primary--col;
+}
+
+h2 {
+  color: $secondary--col;
+}
+
+h3 {
+  margin: 0;
+  color: $secondary--col;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(208, 92%, 53%);
+}
+
+p {
+  margin: 0 0 30px;
+  color: $secondary--col;
+}
+
+span {
+  color: $secondary--col;
+}

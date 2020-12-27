@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Social Media Dashboard</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header wrap">
+        <div class="header__body">
+          <h1 class="header__title darkmode-textcol">Social Media Dashboard</h1>
+          <h2 class="header__subheading">Total Followers: 23, 004</h2>
+        </div>
+
+        <div class="toggle">
+          <h3 class="toggle__title darkmode-textcol">Dark Mode</h3>
+          <div class="toggle__btn">
+            <label class="switch-light switch-material">
+              <input id="js-toggle" type="checkbox" />
+              <span class="toggle__switch">
+                <span>Off</span>
+                <span>On</span>
+                <a></a>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section>
+        <div class="card wrap section-grid">
+          <div class="card__body card__body--col-blue dark-mode">
+            <div class="card__social">
+              <img
+                class="card__social-icon"
+                src="images/icon-facebook.svg"
+                alt="facebook-icon"
+              />
+              <span class="card__link">@nathanf</span>
+            </div>
+
+            <h2 class="card__followers darkmode-textcol">1987</h2>
+            <p class="card__text">Followers</p>
+
+            <div class="card__footer">
+              <img class="up-icon" src="images/icon-up.svg" alt="up-icon" />
+              <span class="card__follower-count card__follower-count--col"
+                >12 Today</span
+              >
+            </div>
+          </div>
+          <!-- /Card One -->
+
+          <div class="card__body card__body--col-blue dark-mode">
+            <div class="card__social">
+              <img
+                class="card__social-icon"
+                src="images/icon-twitter.svg"
+                alt="twitter-icon"
+              />
+              <span class="card__link">@nathanf</span>
+            </div>
+
+            <h2 class="card__followers darkmode-textcol">1044</h2>
+            <p class="card__text">Followers</p>
+
+            <div class="card__footer">
+              <img class="up-icon" src="images/icon-up.svg" alt="up-icon" />
+              <span class="card__follower-count card__follower-count--col"
+                >99 Today</span
+              >
+            </div>
+          </div>
+          <!-- /Card Two -->
+
+          <div class="card__body card__body--col dark-mode">
+            <div class="card__social">
+              <img
+                class="card__social-icon"
+                src="images/icon-instagram.svg"
+                alt="instagram-icon"
+              />
+              <span class="card__link">@realnathanf</span>
+            </div>
+
+            <h2 class="card__followers darkmode-textcol">11k</h2>
+            <p class="card__text">Followers</p>
+
+            <div class="card__footer">
+              <img class="up-icon" src="images/icon-up.svg" alt="up-icon" />
+              <span class="card__follower-count card__follower-count--col"
+                >1099 Today</span
+              >
+            </div>
+          </div>
+          <!-- /Card Three -->
+
+          <div class="card__body card__body--col-red dark-mode">
+            <div class="card__social">
+              <img
+                class="card__social-icon"
+                src="images/icon-youtube.svg"
+                alt="youtube-icon"
+              />
+              <span class="card__link">Nathan F.</span>
+            </div>
+
+            <h2 class="card__followers darkmode-textcol">8239</h2>
+            <p class="card__text">Subscribers</p>
+
+            <div class="card__footer">
+              <img
+                class="down-icon"
+                src="images/icon-down.svg"
+                alt="down-icon"
+              />
+              <span class="card__follower-count card__follower-count--redCol"
+                >144 Today</span
+              >
+            </div>
+          </div>
+          <!-- /Card Four -->
+        </div>
+      </section>
+
+      <section>
+        <h2 class="overview-title wrap">Overview - Today</h2>
+
+        <div class="card-overview wrap section-grid">
+          <!-- Get data from JS -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <small>
+        Challenge by
+        <a
+          class="copyright__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          class="copyright__link"
+          href="https://www.frontendmentor.io/profile/Rabin92"
+          target="_blank"
+          rel="noopener"
+          >Rabin Gharti Magar</a
+        >.
+      </small>
+    </footer>
+    <!-- JS -->
+    <script src="js/card-data.js"></script>
+    <script src="js/script.js"></script>
+    <!-- /JS -->
+  </body>
+</html>

@@ -1,0 +1,131 @@
+// ==========================================================================
+// Card
+// ==========================================================================
+
+.main {
+  position: relative;
+  top: -80px;
+  z-index: 10000;
+
+  @media #{$break--m} {
+    top: -155px;
+  }
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 25px;
+}
+
+.card {
+  padding: $gutters;
+  margin-top: em(30px);
+
+  @include e(body) {
+    @extend %card;
+    padding: 2.5em 2.5em 1.5em;
+    margin-bottom: em(25px);
+
+    @include flexy($f-dir: column);
+
+    @include m(col-blue) {
+      border-top: 4px solid $facebook--col;
+    }
+
+    @include m(col) {
+      position: relative;
+      &::after {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: -4px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to right, $insta--colOne, $insta--colTwo);
+        border-radius: $br--radius;
+      }
+    }
+
+    @include m(col-red) {
+      border-top: 4px solid $youtube--col;
+    }
+  }
+
+  @include e(social) {
+    @include flexy();
+  }
+
+  @include e(social-icon) {
+    margin-right: em(10px);
+  }
+
+  @include e(link) {
+    font-weight: $font-weight--bold;
+  }
+
+  @include e(followers) {
+    margin: 25px 0 0;
+    font-size: em(55px);
+    line-height: 55px;
+    color: $primary--col;
+  }
+
+  @include e(text) {
+    letter-spacing: 0.328em;
+    text-transform: uppercase;
+  }
+
+  @include e(footer) {
+    @include flexy();
+  }
+
+  @include e(follower-count) {
+    font-weight: $font-weight--bold;
+
+    @include m(col) {
+      color: $mountainMeadow;
+    }
+
+    @include m(redCol) {
+      color: $valencia;
+    }
+  }
+}
+
+.card-overview {
+  padding: $gutters;
+
+  @include e(body) {
+    @include flexy($j-content: space-between);
+  }
+
+  @include e(content) {
+    @include flexy($j-content: space-between, $a-items: center);
+
+    margin-top: em(10px);
+  }
+
+  @include e(number) {
+    font-size: em(40px);
+    margin-bottom: 0;
+    color: $primary--col;
+    font-weight: $font-weight--bold;
+  }
+}
+
+.container {
+  @extend %card;
+  padding: $gutters;
+  margin-bottom: em(25px);
+}
+
+.up-icon,
+.down-icon {
+  margin-right: em(3px);
+}
+
+.overview-title {
+  padding: $gutters;
+}

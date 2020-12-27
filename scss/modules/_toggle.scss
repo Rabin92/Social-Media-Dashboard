@@ -1,0 +1,33 @@
+// ==========================================================================
+// Toggle Switch
+// ==========================================================================
+
+.toggle {
+  @include flexy($j-content: space-between, $a-items: null);
+
+  @media #{$break--m} {
+    @include flexy($dsp: null, $j-content: null, $a-items: center);
+    height: 5vh;
+  }
+
+  @include e(title) {
+    margin-right: em(15px);
+  }
+
+  @include e(switch) {
+    cursor: $cursor;
+  }
+}
+
+.switch-material.switch-light > span {
+  background: $toggle--lightThemeCol;
+}
+
+.switch-material.switch-light input:checked ~ span {
+  background-image: linear-gradient(to right, $toggle--colOne, $toggle--colTwo);
+}
+
+.switch-material.switch-light input:checked ~ span a {
+  background: $charade;
+  border: 1px solid $white;
+}

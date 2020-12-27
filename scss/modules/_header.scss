@@ -1,0 +1,27 @@
+// ==========================================================================
+// Header
+// ==========================================================================
+
+.header {
+  padding: $gutters;
+
+  @media #{$break--m} {
+    @include flexy($j-content: space-between);
+  }
+
+  @include e(title) {
+    font-size: em(24px);
+    margin: 2px 0 0;
+  }
+
+  @include e(subheading) {
+    border-bottom: 1px solid $comet;
+    margin-top: 0;
+    padding-bottom: em(10px);
+    font-size: em(14px);
+
+    @media #{$break--m} {
+      border-bottom: none;
+    }
+  }
+}

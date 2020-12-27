@@ -1,0 +1,82 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+
+$font-url--primary: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap';
+$font-family--primary: 'Inter', sans-serif;
+
+// Font Weights
+
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+
+// Descriptive Base Colors
+
+$mountainMeadow: #1db489;
+$valencia: #dc414c;
+$koromiko: #fdc468;
+$cerise: #df4996;
+$monza: #c4032a;
+$blueBell: #8b97c6;
+$white: #fff;
+$zircon: #f5f7ff;
+$whiteLilac: #f0f2fa;
+$comet: #63687e;
+$charade: #1e202a;
+
+// Color Usage
+
+$facebook--col: hsl(208, 92%, 53%);
+$twitter--col: hsl(203, 89%, 53%);
+$insta--colOne: $koromiko;
+$insta--colTwo: $cerise;
+$youtube--col: $monza;
+
+// Toggle Dark Theme
+
+$toggle--colOne: hsl(210, 78%, 56%);
+$toggle--colTwo: hsl(146, 68%, 55%);
+
+// Toggle Light Theme
+
+$toggle--lightThemeCol: hsl(230, 22%, 74%);
+
+// Layout Dark Theme
+
+$textCol--darkTheme: $blueBell;
+
+// Layout Light Theme
+
+$bckTop: $zircon;
+$cardCol: $whiteLilac;
+$primary--col: $charade;
+$secondary--col: $comet;
+
+// Text
+
+$base__font-size: 14px;
+$base__line: 24px;
+$text--center: center;
+
+// Border Radius
+
+$br--radius: 5px;
+
+// Path to Assets
+
+$path--rel: '../images';
+
+// Gutters
+
+$gutters: 1em;
+
+// Cursor
+
+$cursor: pointer;
+
+// Media queries
+
+$break--m: '(min-width: 600px)';
+$break--l: '(min-width: 1440px)';
